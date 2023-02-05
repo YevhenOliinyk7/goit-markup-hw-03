@@ -247,7 +247,9 @@ ul li title {
 }
 
 /* Блок Work  */
-
+.work.section{
+   padding-top: 0px;
+}
 .work .titel {
   margin: 0;
   margin-bottom: 50px;

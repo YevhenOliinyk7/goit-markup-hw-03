@@ -12,7 +12,15 @@
   --address-secondary-color: rgba(255, 255, 255, 0.6);
   --site-border-card: #eeeeee;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
 body {
   color: var(--primary-text-color);
   background-color: var(--primery-bg-color);
@@ -42,6 +50,7 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .hidden {
@@ -209,30 +218,23 @@ body {
 }
 
 /* Блок Наші переваги */
-.advantages {
-  padding-top: 94px;
-  margin-bottom: 94px;
-}
 
 .advantages > .container > .list {
   display: flex;
 }
 
-.advantages .titel {
+.advantages .sup-titel {
   margin-top: 0px;
   margin-bottom: 10px;
-
+  text-align: start;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
+  color: var(--titel-link-color);
 }
 
-.advantages .item > .text {
-  margin: 0;
-  text-align: center;
-}
 ul li title {
   margin-bottom: 10px;
 }
@@ -245,13 +247,11 @@ ul li title {
 }
 
 /* Блок Work  */
-.work {
-  margin-bottom: 94px;
-}
 
 .work .titel {
   margin: 0;
   margin-bottom: 50px;
+  padding-top: 0;
 }
 
 .work .list {
@@ -266,17 +266,16 @@ ul li title {
 .work .list > .item > img {
   display: block;
 }
-
-/* Блок Команда */
-.team {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
-
+}
+/* Блок Команда */
+.team {
   background-color: var(--secondary-bg-color);
 }
 
 .team .titel {
-  margin: 0;
   margin-bottom: 50px;
 }
 
@@ -296,11 +295,10 @@ ul li title {
 }
 
 .title {
-  margin: 0;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--titel-link-color);
@@ -378,23 +376,22 @@ ul li title {
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
-
   color: var(--titel-link-color);
   background-color: var(--secondary-bg-color);
-
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.63;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
   cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .galerry-button:hover,
 .galerry-button:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Карти галереї */
@@ -404,14 +401,12 @@ ul li title {
 .galerry-card .textg {
   color: var(--primary-text-color);
   font-size: 16px;
-  line-height: 1.9px;
+  line-height: 1.9;
   letter-spacing: 0.03em;
 }
 
 .galerry-card .titel {
-  margin: 0;
   margin-bottom: 4px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -433,11 +428,6 @@ ul li title {
 
 .galerry-card > .link {
   color: inherit;
-}
-
-.galerry-card p {
-  display: inline-block;
-  margin: 0;
 }
 
 .info {
